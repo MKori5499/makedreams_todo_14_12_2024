@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addTodo } from '../../slices/todoSlice'
+import './TodoForm.css' 
 
 export default function TodoForm() {
 
@@ -27,7 +28,7 @@ export default function TodoForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="todo-form" onSubmit={handleSubmit}>
       <input name='title' placeholder='Title' required />
       <textarea name='description' placeholder='Discription' />
       <input type='date' name='dueDate' required/>

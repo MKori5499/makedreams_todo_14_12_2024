@@ -31,7 +31,6 @@ export const todoSlice = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
 export const { addTodo, updateTodo, deleteTodo, toggleComplete} = todoSlice.actions
 
 export default todoSlice.reducer
